@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.example.android.quizapp.MainActivity"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation = "vertical"
+        android:layout_margin="16dp"
+        android:background="#f9def0"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="History and Democracy"
+            android:paddingLeft="24dp"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="What is your name?"
+        android:paddingLeft="16dp"
+        />
+
+        <EditText
+            android:id="@+id/name_of_student"
+            android:inputType="textCapWords"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Who was the first president of Kenya?"
+        android:paddingLeft="16dp"
+        android:id="@+id/question_one"
+        />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingBottom="20dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jomo Kenyatta"
+            android:id="@+id/radio_button_one"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mwai Kibaki"
+            android:id="@+id/radio_button_two"
+
+            />
+
+    </RadioGroup>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="When did kenya attain independance?"
+        android:paddingLeft="16dp"
+        android:id="@+id/question_two"
+        />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingBottom="20dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1964"
+            android:id="@+id/radio_button_three"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1963"
+            android:id="@+id/radio_button_four"
+
+            />
+
+    </RadioGroup>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Define democracy?"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/question_three"
+        />
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingBottom="20dp">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A government of the people for the people"
+            android:id="@+id/radio_button_five"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The ruling government"
+            android:id="@+id/radio_button_six"
+            />
+
+    </RadioGroup>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="State two characteristics of a democratic society"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:id="@+id/question_four"
+        />
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="people Rule"
+        android:id="@+id/checkbox_one"/>
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="Free and fair election"
+        android:id="@+id/checkbox_two"  />
+    <CheckBox
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text = "dictatorial"
+        android:id="@+id/checkbox_three"
+        />
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="24sp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:textColor="@android:color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp">
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="submit"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:textColor="#ffffff"
+        android:onClick="SubmitOrder"
+        android:background="@drawable/rounded"
+        />
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Reset"
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:onClick="resetScoreToZero"
+        android:textColor="#ffffff"
+        android:background="@drawable/rounded"
+        />
+    </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
